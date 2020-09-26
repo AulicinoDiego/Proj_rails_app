@@ -14,3 +14,7 @@ class UserMailerTest < ActionMailer::TestCase
   end
 
 end
+
+
+
+

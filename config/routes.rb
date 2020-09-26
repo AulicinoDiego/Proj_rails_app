@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
+
+  get 'user/showresults' => 'users#showresults'
   
   resources :users
   resources :password_resets,     only: [:new, :create, :edit, :update]

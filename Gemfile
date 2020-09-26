@@ -5,11 +5,17 @@ ruby '2.6.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '>= 6.0.3.2'
+#Secure Passw
 gem 'bcrypt'
+#Faker Users
 gem 'faker'  , ">=1.4.2"
+#layout
 gem 'will_paginate',   '>=3.0.7'
 gem 'bootstrap-will_paginate',   '0.0.10'
 gem 'bootstrap-sass',  '>=3.2.00'
+#Image Upload
+gem 'carrierwave'
+gem 'mini_magick'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server

@@ -30,3 +30,4 @@ class MicropostTest < ActiveSupport::TestCase
     assert_equal Micropost.first, microposts(:most_recent)
   end
 end
+

@@ -1,9 +1,9 @@
 
-<header class="navbar navbar-fixed-top navbar-inverse">
+<header class="navbar navbar-fixed-top navbar-inverse" style="background-color: #69BCE6  ">
   <div class="container">
     <%= link_to "Rails app", root_path, id: "logo" %>
     <nav>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav nav-tabs navbar-right">
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Help", help_path %></li>
         <% if logged_in? %>

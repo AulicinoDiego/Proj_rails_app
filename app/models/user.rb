@@ -39,6 +39,10 @@ class User < ActiveRecord::Base
     update_attribute(:remember_digest, nil)
   end
 
+  def self.search(search)
+    where("name like ?", "%#{search}")
+  end
+
   # Sets the password reset attributes.
   def create_reset_digest
     self.reset_token = User.new_token
